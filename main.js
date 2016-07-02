@@ -1,8 +1,13 @@
+let DEBUG = true;
+
 // APP-wide electron object 
 const electron = require('electron');
 
 // Module to control application life.
 const {app} = electron;
+
+// Inter-process communication between 2 or more windows
+const {ipcMain}	= electron; 
 
 // Module to create native browser window.
 const {BrowserWindow} = electron;
@@ -26,9 +31,10 @@ function createNavigationWindow(options = {}) {
   // and load the index.html of the app.
   screenNav.loadURL(`file://${__dirname}/screens/screen-navigation.html`);
 
-
-  // Open the DevTools.
-  screenNav.webContents.openDevTools();
+	if (DEBUG) {
+	  // Open the DevTools.
+		screenNav.webContents.openDevTools();
+	}
 
   // Emitted when the window is closed.
   screenNav.on('closed', () => {
@@ -50,9 +56,11 @@ function createStreetViewWindow(options) {
 
   // and load the index.html of the app.
   screenView.loadURL(`file://${__dirname}/screens/screen-streetview.html`);
-
-  // Open the DevTools.
-  screenView.webContents.openDevTools();
+	
+	if (DEBUG) {
+		// Open the DevTools.
+	  screenView.webContents.openDevTools();
+	}
 
   // Emitted when the window is closed.
   screenView.on('closed', () => {
@@ -73,33 +81,34 @@ function openAppScreens() {
 			return display;
 	});
 
-	let {mainWidth, mainHeight} = electron.screen.getPrimaryDisplay().workAreaSize;
+	const {mainWidth, mainHeight} = electron.screen.getPrimaryDisplay().workAreaSize;
 
 
 	if (externalDisplay) {
-
 		createNavigationWindow({
-			width: mainWidth, height: mainHeight
+			width: mainWidth, height: mainHeight, frame: false, kiosk: true, allowRunningInsecureContent: true
 		});
 
 		createStreetViewWindow({ 
 			width: 1280, height: 800, 
-			x: externalDisplay.bounds.x + 50, 
+			x: externalDisplay.bounds.x, 
 			y: externalDisplay.bounds.y,
-			frame: false
+			frame: false, allowRunningInsecureContent: true
 		});
+
 	} else {
 		createNavigationWindow({
-			width: 800, height: 800
+			width: 800, height: 800, allowRunningInsecureContent: true
 		});
 
 		createStreetViewWindow({ 
-			width: 800, height: 800
+			width: 800, height: 800, allowRunningInsecureContent: true
 		});
 	}
 	
 }
 
+/* ----------- EVENTs -------------*/
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -123,4 +132,13 @@ app.on('activate', () => {
   if (win === null) {
     createWindow();
   }
+});
+
+
+/**
+ * Building a Relay system with the IPC feature
+ * The main process just receive and send the msg back
+ */
+ipcMain.on('async-message', function(event, msg){
+	event.sender.send({ from: 'main', data: msg });
 });

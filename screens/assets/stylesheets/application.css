@@ -1,0 +1,4 @@
+body#navigation { 
+	background: url('../images/bg_navigation.png') no-repeat;
+	background-size: cover;
+}
