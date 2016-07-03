@@ -86,7 +86,8 @@ function openAppScreens() {
 
 	if (externalDisplay) {
 		createNavigationWindow({
-			width: mainWidth, height: mainHeight, frame: false, kiosk: true, allowRunningInsecureContent: true
+			width: mainWidth, height: mainHeight, frame: false, 
+			kiosk: true, allowRunningInsecureContent: true
 		});
 
 		createStreetViewWindow({ 
@@ -107,6 +108,36 @@ function openAppScreens() {
 	}
 	
 }
+
+function triggerKeyboard(direction) {
+
+		var opts = { type: "keyDown",	keyCode: '\u0008' }
+		console.log(direction);
+		switch(direction) {
+
+			case "top":
+				opts = { type: "keyDown",	keyCode: 'Up' };
+				break;
+			case "left":
+				opts = { type: "keyDown",	keyCode: 'Left' };								
+				break;
+			case "right":
+				opts = { type: "keyDown",	keyCode: 'Right' };
+				break
+			case "bottom":
+				opts = { type: "keyDown",	keyCode: 'Down' };			
+				break;
+			default:
+				opts = { type: "keyDown",	keyCode: '\u0013' }								
+				break;
+		}
+
+		console.log(opts);
+		screenView.webContents.sendInputEvent(opts);
+		opts.type = "keyUp";
+		screenView.webContents.sendInputEvent(opts);
+}
+
 
 /* ----------- EVENTs -------------*/
 
@@ -129,8 +160,8 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-  if (win === null) {
-    createWindow();
+  if (screenNav === null && screenView === null) {
+    openAppScreens();
   }
 });
 
@@ -139,6 +170,16 @@ app.on('activate', () => {
  * Building a Relay system with the IPC feature
  * The main process just receive and send the msg back
  */
-ipcMain.on('async-message', function(event, msg){
-	event.sender.send({ from: 'main', data: msg });
+ipcMain.on('screenView', function(event, msg){
+	console.log(msg);
+
+	if (msg.type == 'direction')
+		triggerKeyboard(msg.data);
+
+	screenView.webContents.send('screenView-reply', msg);
+});
+
+ipcMain.on('screenNav', function(event, msg){
+	console.log(msg);
+	screenNav.webContents.send('screenNav-reply', msg);
 });

@@ -4,11 +4,181 @@
 	<meta charset="utf-8">
 
 	<title>Navigate</title>
+	<link rel="stylesheet" href="./assets/stylesheets/fonts.css">
+	<link rel="stylesheet" href="./assets/stylesheets/foundation.css">	
 	<link rel="stylesheet" href="./assets/stylesheets/application.css">
 	
 </head>
 <body id="navigation">
+	<div class="home-btn">
+		<a href="#/" onclick="javascript:window.Navigation.goToScreen(window.Navigation.currentScreen - 1);">
+			<img src="./assets/images/btn-home.png" alt="Back"/>
+		</a>
+	</div>
 
-	<h1>Lets navigate</h1>
+
+	<div data-screen="1" class="screen active" id="main-screen">
+
+		<div class="main-text">
+			<h1 class="text-shadow">DOMO</h1>
+			<h1 class="text-shadow">PASSEIO</h1>
+			<h1 class="text-shadow">VIRTUAL</h1>
+		</div>
+
+		<div class="main-start">
+			<div class="main-background">
+					<div>&nbsp;</div>
+				<div class="row">
+					<div class="large-centered large-4 text-center columns">
+						<img src="./assets/images/scan.png" alt="Scan"/>
+					</div>
+
+					<div class="large-centered large-8 text-center columns end">
+						<h2>passe o cartão</h2>
+						<h4>Pass the card / passe la tarjeta </h4>
+					</div>
+
+					<div class="large-centered large-10 text-center columns end">
+						<h3>passe o cartão</h3>
+						<h4>Pass the card / passe la tarjeta </h4>
+						<hr/>
+					</div>
+
+
+					
+					<div class="large-centered large-8 columns end">
+						<div><strong>sem cartão?</strong> no card? sin tarjeta? </div>
+					</div>
+	
+					<div class="large-centered large-12 text-center columns end">
+						<a href="#/" onclick="javascript:window.Navigation.goToScreen(2)"  class="button special">Toque aqui para começar</a>
+					</div>
+
+					<div class="large-12 large-centered columns text-center end ">
+						<a href="" class="button green-text">Start</a> &nbsp;
+						<a href="" class="button green-text">Empezar</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<div data-screen="2" class="screen" id="options-screen">
+		<div class="cities-screen">
+			<div class="row">
+				<h1 class="cities-header text-shadow">Cidades Olímpicas</h1>
+			</div>
+
+			<div class="row cities-list">
+				<div class="large-3 columns end">
+					<h2>Tóquio 2020</h2>
+					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+				
+				</div>
+
+
+				<div class="large-3 columns end">
+					<h2>Rio de janeiro 2016</h2>
+					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+
+				</div>
+
+				<div class="large-3 columns end">
+					<h2>Londres 2012</h2>
+					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+
+				</div>
+
+				<div class="large-3 columns end">
+					<h2>Pequim 2008</h2>
+					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+
+				</div>
+
+
+				<div class="large-3 columns end">
+					<h2>Atenas 2004</h2>
+					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+
+				</div>
+
+				<div class="large-3 columns end">
+					<h2>Sidney 2000</h2>
+					<img src="#" alt="#" width="420"/>
+				</div>
+
+
+				<div class="large-3 columns end">
+					<h2>Atlanta 1996</h2>
+					<img src="#" alt="#" width="420"/>
+				</div>
+
+				<div class="large-3 columns end">
+					<h2>Barcelona 1992</h2>
+					<img src="#" alt="#" width="420"/>
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div data-screen="3" class="screen content-bg no-fx" id="details-screen">
+		<div class="detail-block">
+			<div class="row" style="width: 70%">
+				<h3>Londres</h3>
+				<h1>British</br>Museum</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt efficitur libero.
+					Nunc nibh velit, faucibus vel congue eu, posuere sit amet leo. Nulla facilisi.
+					Quisque eu blandit metus, at vulputate dui. 
+					Sed ac finibus tellus. Sed at nisl nec lacus cursus convallis. 
+					In condimentum, orci quis maximus euismod, loremi mattis felis, 
+					eu ornare diam elit vel ligula. Praesent iaculis libero neque.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="controls">
+			<div class="row">
+				<div class="large-6 columns">&nbsp;</div>
+				<div class="large-4 columns end">
+						<div class="controls-bg text-center">
+							<a href="#/" data-direction="left">Left</a>
+							<a href="#/" data-direction="top">Top</a>
+							<a href="#/" data-direction="bottom">Bottom</a>
+							<a href="#/" data-direction="right">Right</a>
+
+						</div>
+
+						<div class="controls-actions">
+							<h3>navegue através das setas</h2>
+							<h4> use the arrows to navigate </h4>
+							<h4> utilice la flecha para navegar </h4>
+						</div>
+
+				</div>
+				<div class="large-2 columns end">&nbsp;</div>
+
+			</div>
+	
+		</div>
+	</div>
+
+
+	<script>
+		window.$ = window.jQuery = require('./assets/javascripts/jquery.js');
+		require('./assets/javascripts/navigation.js');
+	
+	</script>
 </body>
 </html>

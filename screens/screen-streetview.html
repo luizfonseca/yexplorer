@@ -4,10 +4,20 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 	<title>Street View</title>
+	<link rel="stylesheet" href="./assets/stylesheets/fonts.css">
+	<link rel="stylesheet" href="./assets/stylesheets/foundation.css">
+	<link rel="stylesheet" href="./assets/stylesheets/application.css">
 	
 </head>
-<body>
+<body id="streetview">
 
-	<h1>Hello World</h1>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkgyCY-yfNEs4biud3228duxdJvVRRADQ&callback=window.StreetView.initialize"></script>
+	<script>
+		window.$ = window.jQuery = require('./assets/javascripts/jquery.js');
+		require('./assets/javascripts/streetview.js');
+	
+	</script>
+
 </body>
 </html>
