@@ -134,6 +134,10 @@ function triggerKeyboard(direction) {
 
 		console.log(opts);
 		screenView.webContents.sendInputEvent(opts);
+		screenView.webContents.sendInputEvent(opts);
+		screenView.webContents.sendInputEvent(opts);
+		screenView.webContents.sendInputEvent(opts);
+		screenView.webContents.sendInputEvent(opts);
 		opts.type = "keyUp";
 		screenView.webContents.sendInputEvent(opts);
 }

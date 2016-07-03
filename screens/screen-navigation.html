@@ -11,7 +11,7 @@
 </head>
 <body id="navigation">
 	<div class="home-btn">
-		<a href="#/" onclick="javascript:window.Navigation.goToScreen(window.Navigation.currentScreen - 1);">
+		<a href="#/" >
 			<img src="./assets/images/btn-home.png" alt="Back"/>
 		</a>
 	</div>
@@ -55,8 +55,8 @@
 					</div>
 
 					<div class="large-12 large-centered columns text-center end ">
-						<a href="" class="button green-text">Start</a> &nbsp;
-						<a href="" class="button green-text">Empezar</a>
+						<a href=""  onclick="javascript:window.Navigation.goToScreen(2)" class="button green-text">Start</a> 
+						<a href=""  onclick="javascript:window.Navigation.goToScreen(2)" class="button green-text">Empezar</a>
 					</div>
 				</div>
 			</div>
@@ -76,50 +76,120 @@
 			<div class="row cities-list">
 				<div class="large-3 columns end">
 					<h2>Tóquio 2020</h2>
-					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
-				
+					<a href="#/" data-lat="35.6592118" data-lng="139.7007222">
+
+						<img src="./assets/images/cities/tokio_1.png" alt="#" width="420"/>
+						<span>Shibuya Crossing</span>
+					</a>
+					<a href="#/" data-lat="35.7142921" data-lng="139.7967722">
+
+						<img src="./assets/images/cities/tokio_2.png" alt="#" width="420"/>
+						<span>Senso-Ji</span>
+					</a>
 				</div>
 
 
 				<div class="large-3 columns end">
 					<h2>Rio de janeiro 2016</h2>
-					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+					<a href="#/" data-lat="-22.9518323" data-lng="-43.2099972">
+
+						<img src="./assets/images/cities/rio_1.png" alt="#" width="420"/>
+						<span>Cristo Redentor</span>
+					</a>
+					<a href="#/" data-lat="-22.9401839" data-lng="-43.1697769">
+
+						<img src="./assets/images/cities/rio_2.png" alt="#" width="420"/>
+						<span>Pedra do Arpoador</span>
+					</a>
 
 				</div>
 
 				<div class="large-3 columns end">
 					<h2>Londres 2012</h2>
-					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+					<a href="#/" data-lat="51.501289" data-lng="-0.123098">
+
+						<img src="./assets/images/cities/londres_1.png" alt="#" width="420"/>
+						<span>Westmin. / Big Ben</span>
+					</a>
+					<a href="#/" data-lat="51.5100232" data-lng="-0.1346434">
+
+						<img src="./assets/images/cities/londres_2.png" alt="#" width="420"/>
+						<span>Piccadilly Circus</span>
+					</a>
 
 				</div>
 
 				<div class="large-3 columns end">
 					<h2>Pequim 2008</h2>
-					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+					<a href="#/" data-lat="40.3505278" data-lng="116.0030789">
+
+						<img src="./assets/images/cities/china_1.png" alt="#" width="420"/>
+						<span>GRANDE MURALHA</span>
+					</a>
+					<a href="#/" data-lat="39.9176712" data-lng="116.3978901">
+
+						<img src="./assets/images/cities/china_2.png" alt="#" width="420"/>
+						<span>Cidade Proibida</span>
+					</a>
 
 				</div>
 
 
 				<div class="large-3 columns end">
 					<h2>Atenas 2004</h2>
-					<a href="#/" onclick="window.Navigation.goToScreen(3);"><img src="#" alt="#" width="420"/></a>
+					<a href="#/" data-lat="37.9718167" data-lng="23.7272172">
+
+						<img src="./assets/images/cities/grecia_1.png" alt="#" width="420"/>
+						<span>Parthenon</span>
+					</a>
+					<a href="#/" data-lat="37.6373002" data-lng="21.6294512">
+
+						<img src="./assets/images/cities/grecia_2.png" alt="#" width="420"/>
+						<span>Olimpia</span>
+					</a>
+
 
 				</div>
 
 				<div class="large-3 columns end">
 					<h2>Sidney 2000</h2>
-					<img src="#" alt="#" width="420"/>
+					<a href="#/" data-lat="-33.8569812" data-lng="151.2149617">
+
+						<img src="./assets/images/cities/sidney_1.png" alt="#" width="420"/>
+						<span>Opera House</span>
+					</a>
+					<a href="#/" data-lat="-33.8546766" data-lng="151.2094713">
+
+						<img src="./assets/images/cities/sidney_2.png" alt="#" width="420"/>
+						<span>Panorama</span>
+					</a>
 				</div>
 
 
 				<div class="large-3 columns end">
 					<h2>Atlanta 1996</h2>
-					<img src="#" alt="#" width="420"/>
+					<a href="#/" data-lat="33.7597049" data-lng="-84.3929038">
+
+						<img src="./assets/images/cities/atlanta_1.png" alt="#" width="420"/>
+						<span>Olympic Park</span>
+					</a>
+					<a href="#/" data-lat="33.755092" data-lng="-84.3728177">
+
+						<img src="./assets/images/cities/atlanta_2.png" alt="#" width="420"/>
+						<span>Memorial Martin L. King</span>
+					</a>
 				</div>
 
 				<div class="large-3 columns end">
 					<h2>Barcelona 1992</h2>
-					<img src="#" alt="#" width="420"/>
+					<a href="#/" data-lat="41.413605" data-lng="2.1530583">
+						<img src="./assets/images/cities/barcelona_1.png" alt="#" width="420"/>
+						<span>Parc Guell</span>
+					</a>
+					<a href="#/" data-lat="41.37582" data-lng="2.1770794">
+						<img src="./assets/images/cities/barcelona_2.png" alt="#" width="420"/>
+						<span>Monumento Cristoforo Colombo</span>
+					</a>
 				</div>
 
 
@@ -133,7 +203,7 @@
 
 	<div data-screen="3" class="screen content-bg no-fx" id="details-screen">
 		<div class="detail-block">
-			<div class="row" style="width: 70%">
+			<div class="row" style="width: 80%">
 				<h3>Londres</h3>
 				<h1>British</br>Museum</h1>
 				<p>
@@ -153,11 +223,12 @@
 				<div class="large-6 columns">&nbsp;</div>
 				<div class="large-4 columns end">
 						<div class="controls-bg text-center">
-							<a href="#/" data-direction="left">Left</a>
-							<a href="#/" data-direction="top">Top</a>
-							<a href="#/" data-direction="bottom">Bottom</a>
-							<a href="#/" data-direction="right">Right</a>
-
+							<div class="controls">
+								<a href="#/" class="left" data-direction="left">◀</a>
+								<a href="#/" class="top" data-direction="top">▲</a>
+								<a href="#/" class="bottom" data-direction="bottom">▼</a>
+								<a href="#/" class="right" data-direction="right">▶</a>
+							</div>
 						</div>
 
 						<div class="controls-actions">

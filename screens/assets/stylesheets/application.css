@@ -10,6 +10,22 @@ body,html { overflow: hidden; max-width: 1920px; width: 100%; -webkit-font-smoot
 	background: url('../images/bg_nav_content.png') no-repeat;
 }
 
+
+body#streetview {
+	background: url('../images/bg_navigation.png');
+	background-repeat: no-repeat !important;
+	background-size: cover !important; 
+	animation: 15s movebg ease-out infinite;
+}
+
+
+@keyframes movebg {
+	0% { background: url('../images/cities/bgs/grecia_1.png') no-repeat; background-size: cover}
+	50% { background: url('../images/cities/bgs/londres_2.png') no-repeat; background-size: cover}
+	100% { background: url('../images/cities/bgs/londres_1.png') no-repeat; background-size: cover}
+
+}
+
 body#navigation .home-btn {
 	opacity: 0;
 	transition: all .2s;
@@ -43,7 +59,17 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+	transition: all .3s;
 }
+
+
+#street-view-embed canvas {
+	transition: all .3s;
+}
+
+
+.gmnoprint, .gmnoscreen, .gm-style-cc { visibility: hidden; }
+
 .text-shadow { text-shadow: 0 1px 1px #888; }
 .text-center { text-align: center; }
 .hidden { display: none; }
@@ -131,11 +157,12 @@ body {
 	font-size: 90px;	
 	text-transform: uppercase;
 	color: white;
+	line-height: .6em;
+	margin: .8em 0 .4em 0;
 }
 
 
 .cities-list .columns {
-	border: 1px solid red;
 }
 
 
@@ -147,9 +174,31 @@ body {
 	
 }
 
+.cities-list a { 
+	display: block;
+	color: white; 
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	box-shadow: 0 0px 10px #333;
+}
+
+
+.cities-list img { 
+	box-shadow: inset 0 10px 10px -10px #000000;
+}
+
+.cities-list a span { 
+	display: block;
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	font-size: 20px;
+}
+
 
 #details-screen {
-	
 }
 
 #details-screen .detail-block {
@@ -192,13 +241,18 @@ body {
 
 }
 
-
+#details-screen.active .controls-bg {
+	opacity: 1;
+	transition: all .2s ease-in;
+}
 
 .controls-bg { 
+	opacity: 0;
 	width: 450px;
 	height: 450px;
 	margin: 0 auto;
 	margin-top: 230px;
+	z-index: 0;
 	background: url('../images/bg_controls.png') no-repeat center;
 }
 
@@ -217,3 +271,18 @@ body {
 	font-weight: 100;
 	font-size: 24px;
 }
+
+.controls-bg .controls { position: relative; }
+
+.controls-bg a {
+	display: block;
+	color: #e7e7e7;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+
+a.left {	position: absolute; left: 125px; top: 200px;  }
+a.right {	position: absolute; right: 120px; top: 200px;  }
+a.top {	position: absolute; top: 110px; left: 213px }
+a.bottom {position: absolute; top: 280px; left: 213px }
