@@ -1,3 +1,5 @@
 .DS_Store
 node_modules/
 dist/
+YExplorer-win32-x64
+YExplorer-win32-ia32
