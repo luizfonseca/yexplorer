@@ -1,14 +1,16 @@
 {
-	"name": "YExplorer",
-	"description": "Explore the world with YExplorer",
-	"version": "0.1.alpha",
-	"main": "main.js",
-	"productName": "YExplorer",
-	"build": {
-		"app-bundle-id": "ybr.2016",
-		"app-category-type": "br.com.ydreams.explorer",
-		"win": {
-		
-		}
-	}
+  "name": "YExplorer",
+  "description": "Explore the world with YExplorer",
+  "author": "YDreams",
+  "version": "0.5.0",
+  "main": "main.js",
+  "productName": "YExplorer",
+  "build": {
+    "app-bundle-id": "ybr.2016",
+    "app-category-type": "br.com.ydreams.explorer",
+    "win": {}
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.5"
+  }
 }
