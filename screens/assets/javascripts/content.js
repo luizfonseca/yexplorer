@@ -53,7 +53,7 @@ window.ContentBlock = {
 		for (var index in block) {
 
 			var item = block[index];
-
+	
 			if (typeof item.element != 'undefined') {
 				var attr = typeof item.attr != 'undefined' ? item.attr : {};
 				root.push($(item.element, attr).addClass(item.cssClass));

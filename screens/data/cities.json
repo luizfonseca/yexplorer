@@ -70,7 +70,122 @@
 			
 			},
 			{
-			
+				"header": "Pequim 2008",
+				"items": [
+					{	
+						"name": "Grande Muralha",
+						"text": "A Grande Muralha consiste de diversas muralhas, construídas durante várias dinastias ao longo de aproximadamente dois milênios (começou no ano 220 a.C com término no século XV, durante a Dinastia Ming). Se, no passado, a sua função foi essencialmente defensiva, no presente constitui um símbolo da China e uma procurada atração turística.",
+						"lat": "40.3505278",
+						"lng": "116.0030789",
+						"image": "data/cities/china_1.png",
+						"background": "data/cities/bg/china_1.png"
+					},
+					{
+						"name": "Cidade Proibida",
+						"text": "A Cidade Proibida , foi o palácio imperial da China desde meados da Dinastia Ming até ao fim da Dinastia Qing. Fica localizada no centro da antiga cidade de Pequim, acolhendo actualmente o \"Palácio Museu\". Durante quase cinco séculos serviu como residência do Imperador e do seu pessoal doméstico, sendo o centro cerimonial e político do governo chinês.",
+						"lat": "39.9176712",
+						"lng": "116.3978901",
+						"image": "data/cities/china_2.png",
+						"background": "data/cities/bg/china_2.png"
+
+					}
+				]		
+					
+
+			},
+
+			{
+				"header": "Atenas 2004",
+				"items": [
+					{	
+						"name": "Parthenon",
+						"text": "O Partenon ou Partenão foi um templo dedicado à deusa grega Atena, construído no século V a.C. na Acrópole de Atenas, na Grécia Antiga, por iniciativa de Péricles, governante da cidade, projetado pelos arquitetos Calícrates e Ictinos e decorado em sua maior parte pela oficina do escultor Fídias, que também executou a estátua criselefantina (marfim e ouro) da deusa patrona da cidade, Atena Partenos, presente no interior do templo à época.",
+						"lat": "37.9718167",
+						"lng": "23.7272172",
+						"image": "data/cities/grecia_1.png",
+						"background": "data/cities/bg/grecia_1.png"
+					},
+					{
+						"name": "Olimpia",
+						"text": "Olímpia é uma cidade da Grécia famosa por ter sido o local onde se realizavam os Jogos Olímpicos da Antiguidade até sua supressão em 394 pelo imperador romano Teodósio I — Jogos estes que só foram igualados em importância aos seus equivalentes realizados em Delfos, os Jogos Pítios. Olímpia também é conhecida pela gigantesca estátua de Zeus em marfim e ouro, criada pelo escultor Fídias para o templo do deus localizado na cidade, e que foi uma das sete maravilhas do mundo antigo.",
+						"lat": "37.6373002",
+						"lng": "21.6294512",
+						"image": "data/cities/grecia_2.png",
+						"background": "data/cities/bg/grecia_1.png"
+
+					}
+				]		
+					
+			},
+
+			{
+				"header": "Sidney 2000",
+				"items": [
+					{	
+						"name": "Opera House",
+						"text": "A casa da Ópera de Sydney (em inglês Sydney Opera House), também conhecida como Teatro de Sydney, é um dos edifícios de espetáculo mais marcantes a nível mundial, e um dos símbolos da Austrália, localizada na cidade de Sydney. A construção, projetada por Jørn Utzon, começou em 1959 e está localizada sobre a Baía de Sydney. Apesar de o arquiteto ter abandonado o projeto em 1966, o edifício foi inaugurado em 20 de outubro de 1973",
+						"lat": "-33.8569812",
+						"lng": "151.2149617",
+						"image": "data/cities/sidney_1.png",
+						"background": "data/cities/bg/sidney_1.png"
+					},
+					{
+						"name": "Panorama",
+						"text": "A casa da Ópera de Sydney (em inglês Sydney Opera House), também conhecida como Teatro de Sydney, é um dos edifícios de espetáculo mais marcantes a nível mundial, e um dos símbolos da Austrália, localizada na cidade de Sydney. A construção, projetada por Jørn Utzon, começou em 1959 e está localizada sobre a Baía de Sydney. Apesar de o arquiteto ter abandonado o projeto em 1966, o edifício foi inaugurado em 20 de outubro de 1973",
+						"lat": "33.755092",
+						"lng": "151.2094713",
+						"image": "data/cities/sidney_2.png",
+						"background": "data/cities/bg/sidney_2.png"
+
+					}
+				]		
+					
+			},
+			{
+				"header": "Atlanta 1996",
+				"items": [
+					{	
+						"name": "Olympic Park",
+						"text": "Centennial Olympic Park é um extenso parque público (85 000 m²) localizado no centro de Atlanta, Geórgia. Pertence e é operado pela Georgia World Congress Center Authority. O parque foi construído pelo Comitê de Atlanta para os Jogos Olímpicos (ACOG), como parte das melhorias de infra-estrutura para os Jogos Olímpicos de Verão de 1996. Billy Payne, executivo-chefe da ACOG, concebeu-o tanto para uso durante as Olimpíadas, como para o futuro de Atlanta.",
+						"lat": "33.7597049",
+						"lng": "-84.3929038",
+						"image": "data/cities/atlanta_1.png",
+						"background": "data/cities/bg/atlanta_1.png"
+					},
+					{
+						"name": "Memorial Martin L. King",
+						"text": "The King Center (oficialmente: Martin Luther King, Jr., National Historic Site[1] ) é uma área da cidade de Atlanta, Geórgia constituída de várias construções relacionadas à vida do pastor e ativista Martin Luther King, Jr. No total, as construções somam 0,14 km² de área construída. A área foi designada Local histórico nacional em 10 de outubro de 1980.",
+						"lat": "33.755092",
+						"lng": "-84.3728177",
+						"image": "data/cities/atlanta_2.png",
+						"background": "data/cities/bg/atlanta_2.png"
+
+					}
+				]		
+					
+			},
+
+			{
+				"header": "Barcelona 1992",
+				"items": [
+					{	
+						"name": "Parc Guell",
+						"text": "O Parque Güell é um grande parque urbano com elementos arquitetónicos situado no distrito de Gràcia da cidade de Barcelona, na vertente virada para o Mar Mediterrâneo do Monte Carmelo, não muito longe do Tibidabo. Originalmente destinado a ser uma urbanização, foi concebido pelo arquiteto Antoni Gaudí, expoente máximo do modernismo catalão, por encomenda do empresário Eusebi Güell.[1] Construído entre 1900 e 1914, revelou-se um fracasso comercial e foi vendido ao Município de Barcelona em 1922, tendo sido inaugurado como parque público em 1926.",
+						"lat": "41.413605",
+						"lng": "2.1530583",
+						"image": "data/cities/barcelona_1.png",
+						"background": "data/cities/bg/barcelona_1.png"
+					},
+					{
+						"name": "Monumento Cristoforo Colombo",
+						"text": "O Monumento a Colombo (em catalão, Monument a Colom) é uma das mais famosas estátuas da cidade de Barcelona, na Espanha. Foi construída em homenagem ao descobridor Cristóvão Colombo. Está erguida na praça do Portal da Paz (Portal de la Pau), ponto de união entre o sul da Rambla e o Passeio de Colombo (Passeig de Colón), em frente ao Porto de Barcelona.",
+						"lat": "41.37582",
+						"lng": "2.1770794",
+						"image": "data/cities/barcelona_2.png",
+						"background": "data/cities/bg/barcelona_2.png"
+
+					}
+				]		
 			}
 		]
 	}

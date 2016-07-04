@@ -16,6 +16,8 @@ window.StreetView = {
 
 	setupPanorama: function(msg_lat, msg_lng) {
 		$('#street-view-embed').fadeOut('fast').remove();
+		$('#streetview').append('<div id="loading"><strong>Aguarde</strong> <span></span></div>');
+
 		$('#streetview').append('<div id="street-view-embed" style="opacity: 0"></div>');
 		
 		var pano = new google.maps.StreetViewPanorama(
@@ -49,6 +51,8 @@ window.StreetView = {
 	toggleStreetView: function() {
 		$('#street-view-embed').fadeOut();
 		$('#street-view-embed').remove();
+		$('#loading').remove();
+		
 	},
 
 
