@@ -1,0 +1,4 @@
+- Executar o arquivo YExplorer.exe
+- Para alterar textos das cidades: resources/screens/data/cities.json
+- screens/streetview cuida do mapa
+- screens/navigation cuida da tela de navegação/listagem das cidades
