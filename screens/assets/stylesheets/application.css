@@ -73,7 +73,7 @@ body {
 .text-shadow { text-shadow: 0 1px 1px #888; }
 .text-center { text-align: center; }
 .hidden { display: none; }
-.screen { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; z-index: 1; opacity: 0; transition: all .3s;  }
+.screen { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; z-index: 1; opacity: 0; transition: all .2s;  }
 .screen.no-fx { opacity: 1; transition: none; }
 .screen.active { z-index: 2; opacity: 1;  }
 
@@ -93,6 +93,7 @@ body {
 	font-size: 200px;
 	line-height: .8em;
 	text-indent: 0;
+	z-index: 3;
 	
 }
 
@@ -105,6 +106,51 @@ body {
 
 }
 
+.main-start {
+	position: relative;
+}
+
+.main-start:before {
+	content: "";
+  position: absolute;
+  width: 680px;
+  height: 680px;
+  top: -110px;
+  left: 135px;
+  z-index: 1;
+  background: url('../images/bg_mainstart_1.png') no-repeat;
+	background-size: cover;
+  transform: rotate(0deg);
+	transition: all .3s;
+	animation: 6s rotateFade linear infinite;
+}
+
+.main-start:after {
+	content: "";
+  position: absolute;
+  width: 680px;
+  height: 680px;
+  top: -110px;
+  left: 135px;
+  z-index: 1;
+  background: url('../images/bg_mainstart_2.png') no-repeat;
+	background-size: cover;
+  transform: rotate(0deg);
+	transition: all .3s;
+	animation: 4s rotateFadeCounter linear infinite;
+}
+
+@keyframes rotateFadeCounter {
+	0% { transform: rotate(0deg); opacity: 1 }
+	50% { transform: rotate(-180deg); opacity: .4 }
+	100% { transform: rotate(-360deg); opacity: 1 }
+}
+
+@keyframes rotateFade {
+	0% { transform: rotate(0deg); opacity: 1 }
+	50% { transform: rotate(180deg); opacity: .4 }
+	100% { transform: rotate(360deg); opacity: 1 }
+}
 
 .main-background {
 	margin-left: 200px;
@@ -115,6 +161,33 @@ body {
 	border-radius: 500px;
 	background: white;
 	box-shadow: 0 0 10px #777;
+	z-index: 2;
+}
+
+
+.main-start h2, h4  {
+	margin: 0;
+	color: #444;
+
+}
+
+.main-start img {
+	margin: 1.8em auto 1em .4em;
+	
+}
+
+.main-start h2 {
+	margin-bottom: .2em;
+	font-size: 22px;
+}
+
+.main-start h4 {
+	font-weight: 100;
+}
+
+.main-start hr {
+	display: block;
+	margin: 2em 0;
 }
 
 .main-start {
@@ -131,12 +204,13 @@ body {
 	background: #4d4e50;
 	text-decoration: none;
 	color: white;
-	padding: 1em 4em;
+	padding: .6em 1em;
+	margin: .4em;
 	display: inline-block;
 	font-weight: 500;
 	border-radius: 40px;
 	box-shadow: 0 0 4px #999;
-	width: 30%;
+	width: 33%;
 }
 
 .main-start .button.special {
@@ -159,10 +233,6 @@ body {
 	color: white;
 	line-height: .6em;
 	margin: .8em 0 .4em 0;
-}
-
-
-.cities-list .columns {
 }
 
 
@@ -223,7 +293,7 @@ body {
 	text-transform: uppercase;
 	margin: 0;
 	margin-top: 270px;
-	margin-bottom: 32px;
+	margin-bottom: 5px;
 	
 }
 
@@ -237,8 +307,8 @@ body {
 
 #details-screen p {
 	font-size: 24px;
-
-
+	max-height: 460px;
+	overflow: hidden;
 }
 
 #details-screen.active .controls-bg {

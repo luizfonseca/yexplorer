@@ -6,8 +6,17 @@ window.Navigation = {
 	initialize: function() {
 		this.sendMessage(null, "App Start");
 		this.bindDirection();
-		this.bindDetails();
 		this.bindClickHome();
+
+		var content = window.ContentBlock;
+		var self		= this;
+
+		content.getCities().done(function(data){
+			var cities = content.buildCitiesList(data);	
+			$('.cities-list').append(cities);
+			self.bindDetails();
+		});
+
 	},
 
 	goToScreen: function(scr) {
@@ -46,22 +55,20 @@ window.Navigation = {
 
 	bindDetails: function() {
 		var self = this;
-		$('.cities-list a').on('click', function(){
+		$('.cities-list').on('click', 'a', function(){
 			var obj = $(this);
-			var lat = obj.attr('data-lat');
-			var lng = obj.attr('data-lng');
-
-			self.prepareDetailScreen(lat, lng, obj.children('span').text(), obj.siblings('h2').text());
+			self.prepareDetailScreen(obj);
 			self.goToScreen(3);
 		});
 	},
 
-	prepareDetailScreen: function(lat, lng, name, parent) {
-		$('.detail-block h1').html(name);
-		$('.detail-block h3').html(parent.split(' ')[0]);
+	prepareDetailScreen: function(obj) {
+		$('.detail-block h1').html(obj.data('name'));
+		$('.detail-block h3').html(obj.data('header').split(' ')[0]);
+		$('.detail-block p').html(obj.data('text'));
+		$('#details-screen').delay(500).css({background: 'url('+obj.data('background')+')', backgroundSize: 'cover'});
 		
-		this.sendMessage('rendering', { lat: lat, lng: lng });
-
+		this.sendMessage('rendering', { lat: obj.data('lat'), lng: obj.data('lng') });
 
 	},
 

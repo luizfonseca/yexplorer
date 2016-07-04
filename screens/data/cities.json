@@ -1,0 +1,77 @@
+{ 
+	"pt": {
+		"cities": [
+			{
+				"header": "Tóquio 2020",
+				"items": [
+					{	
+						"name": "Shibuya Crossing",
+						"text": "Shibuya was historically the site of a castle in which the Shibuya family resided from the 11th century through the Edo period. Following the opening of the Yamanote Line in 1885, Shibuya began to emerge as a railway terminal for southwestern Tokyo and eventually as a major commercial and entertainment center. The village of Shibuya was incorporated in 1889 by the merger of the villages of Kami-Shibuya, Naka-Shibuya and Shimo-Shibuya within Minami-Toshima County (Toyotama County from 1896). The village covered the territory of modern-day Shibuya Station area as well as the Hiroo, Daikanyama, Aoyama and Ebisu areas. Shibuya became a town in 1909. The town of Shibuya merged with the neighboring towns of Sendagaya (which included the modern Sendagaya, Harajuku and Jingumae areas) and Yoyohata (which included the modern Yoyogi and Hatagaya areas) to form Shibuya Ward of Tokyo City in 1932. Tokyo City became Tokyo Metropolis in 1943, and the present-day special ward was established on March 15, 1947.",
+						"lat": "35.6592118",
+						"lng": "139.7007222",
+						"image": "data/cities/tokio_1.png",
+						"background": "data/cities/bg/tokio_1.png"
+						
+					},
+					{
+						"name": "Senso-JI",
+						"text": "The temple is dedicated to the bodhisattva Kannon (Avalokiteśvara). According to legend, a statue of the Kannon was found in the Sumida River in 628 by two fishermen, the brothers Hinokuma Hamanari and Hinokuma Takenari. The chief of their village, Hajino Nakamoto, recognized the sanctity of the statue and enshrined it by remodeling his own house into a small temple in Asakusa so that the villagers could worship Kannon. Sensō-ji is the focus of Tokyo's largest and most popular festival, Sanja Matsuri. This takes place over 3–4 days in late spring, and sees the surrounding streets closed to traffic from dawn until late evening. Dominating the entrance to the temple is the Kaminarimon or \"Thunder Gate\". This imposing Buddhist structure features a massive paper lantern dramatically painted in vivid red-and-black tones to suggest thunderclouds and lightning.",
+						"lat": "35.7142921",
+						"lng": "139.7967722",
+						"image": "data/cities/tokio_2.png",
+						"background": "data/cities/bg/tokio_2.png"
+					}
+				]
+			},
+
+			{
+				"header": "Rio de Janeiro 2016",
+				"items": [
+					{	
+						"name": "Cristo Redentor",
+						"text": "Cristo Redentor é uma estátua art déco que retrata Jesus Cristo, localizada no topo do morro do Corcovado, a 709 metros acima do nível do mar, no Parque Nacional da Tijuca, com vista para a maior parte da cidade do Rio de Janeiro, Brasil. Em 2007 foi eleito informalmente como uma das novas sete maravilhas do mundo. Em 2012 a UNESCO considerou o Cristo Redentor como parte da paisagem do Rio de Janeiro incluída na lista de Patrimônios da Humanidade. O monumento foi concebido pelo engenheiro brasileiro Heitor da Silva Costa e construído em colaboração com o escultor francês Paul Landowski e com o engenheiro francês Albert Caquot, entre 1922 e 1931. Foi inaugurada no dia 12 de outubro de 1931, dia de Nossa Senhora Aparecida e fica no bairro de Santa Teresa.",
+						"lat": "-22.9518323",
+						"lng": "-43.2099972",
+						"image": "data/cities/rio_1.png",
+						"background": "data/cities/bg/rio_1.png"
+					},
+					{
+						"name": "Pedra do Arpoador",
+						"text": "Arpoador é o nome dado a uma praia e a uma formação rochosa, ambas situadas no bairro de Ipanema, no município do Rio de Janeiro, no estado do Rio de Janeiro, no Brasil. Localiza-se entre as praias do Diabo e de Ipanema. Apresenta espaço restrito, por se tratar de uma praia pequena, com cerca de 500 metros de comprimento. A praia do Arpoador é conhecida como a praia dos surfistas, uma vez que conta com muitas ondas grandes, propícias à prática desse esporte. O nome do local provém do fato de, no local, no passado, ser possível arpoarem-se baleias. Na região do Arpoador, encontra-se o parque Garota de Ipanema, que leva o nome da famosa música de Vinícius de Moraes e Tom Jobim. Além de ponto de recreação e lazer, o parque também serve de palco para apresentações de artistas conhecidos.",
+						"lat": "-22.9401839",
+						"lng": "-43.1697769",
+						"image": "data/cities/rio_2.png",
+						"background": "data/cities/bg/rio_2.png"
+					}
+				]		
+			
+			}, 
+			{
+				"header": "Londres 2012",
+				"items": [
+					{	
+						"name": "Westmin. / Big Ben",
+						"text": "Big Ben é o nome do sino que foi instalado no Palácio de Westminster durante a gestão de Sir Benjamin Hall, ministro de Obras Públicas da Inglaterra, em 1859. Apesar do termo também ser usado para se referir à torre do relógio onde o sino está localizado, a estrutura é oficialmente conhecida como a Elizabeth Tower, rebatizada para comemorar o Jubileu de Diamante da Rainha Isabel II do Reino Unido (antes de ser rebatizada em 2012, a torre era conhecida simplesmente como \"Clock Tower\"). A edificação possui o segundo maior relógio de quatro faces do mundo (o da prefeitura de Minneapolis, Estados Unidos, é o primeiro),[1] foi construída em estilo neogótico e tem 96 metros de altura.[2] A torre foi concluída em 1858 e tornou-se um dos símbolos mais importantes do Reino Unido, sendo frequentemente retratada em filmes ambientados em Londres.",
+						"lat": "51.501289",
+						"lng": "-0.123098",
+						"image": "data/cities/londres_1.png",
+						"background": "data/cities/bg/londres_1.png"
+					},
+					{
+						"name": "Piccadilly Circus",
+						"text": "Piccadilly Circus é uma famosa praça de Londres, onde se cruzam as seguintes ruas: Regent's Street, Shaftesbury Avenue, Piccadilly (a rua que liga Piccadilly Circus a Hyde Park) e Haymarket. Pertence ao borough (as camâras municipais de Londres) de Westminster, e é uma das zonas mais movimentadas da capital britânica.",
+						"lat": "51.5100232",
+						"lng": "-0.1346434",
+						"image": "data/cities/londres_2.png",
+						"background": "data/cities/bg/londres_2.png"
+					}
+				]		
+					
+			
+			},
+			{
+			
+			}
+		]
+	}
+}
